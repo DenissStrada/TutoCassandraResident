@@ -52,8 +52,8 @@
 					$conexion->consultaSQL();
  					$row = mysql_fetch_array($conexion->result);
 					$usuario=$row['nombre']." ".$row['aPaterno']." ".$row['aMaterno'];
-					echo "<p class='Estilo7'>¡ Bienvenido !<br><br>$usuario</p>";
-					// Libera la consulta y cierra la conexión
+					echo "<p class='Estilo7'>ï¿½ Bienvenido ooooo<br><br>$usuario</p>";
+					// Libera la consulta y cierra la conexiï¿½n
 					$conexion->liberaConsultaCierraConexion();
 				}
 				?>
