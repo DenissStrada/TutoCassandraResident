@@ -51,8 +51,8 @@
                             $row = mysql_fetch_array($conexion->result);
                             $usuario=$row['nombre']." ".$row['aPaterno']." ".$row['aMaterno'];
                             $tipoUsuario=$row['privilegios'];
-                            echo "<p class='Estilo7'>¡ Bienvenido !<br><br>$usuario</p>";
-                            // Libera la consulta y cierra la conexión
+                            echo "<p class='Estilo7'>ï¿½ Bienvenido !<br><br>$usuario</p>";
+                            // Libera la consulta y cierra la conexiï¿½n
                             $conexion->liberaConsultaCierraConexion();
                         }
                     ?>
@@ -194,7 +194,7 @@
     	<h2>INSTITUTO TECNOL&Oacute;GICO SUPERIOR DE URUAPAN </h2>
         <h2>COORDINADORES DEL PROGRAMA INSTITUCIONAL DE TUTORIA</h2>
         <h3>SEMESTRE AGOSTO 2012 ENERO 2013</h3>
-        <h3>Informe de resultados del cuestionario autoevaluación de hábitos de estudio</h3>
+        <h3>Informe de resultados del cuestionario autoevaluaciï¿½n de hï¿½bitos de estudio</h3>
 		
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -204,34 +204,35 @@
 		<h4>carrera:";
 		switch($carrera){
 			case 1:
-				echo "Ingeniería en Sistemas Computacionales";
+				echo "Ingenierï¿½a en Sistemas Computacionales";
 				break;
 			case 2:
-				echo "Licenciatura en Administración";
+				echo "Licenciatura en Administraciï¿½n";
 				break;
 			case 3:
-				echo "Ingeniería Industrial";
+				echo "Ingenierï¿½a Industrial";
 				break;
 			case 4:
-				echo "Ingeniería en Industrias Alimentarias";
+				echo "Ingenierï¿½a en Industrias Alimentarias";
 				break;
 			case 5:
-				echo "Ingeniería Electrónica";
+				echo "Ingenierï¿½a Electrï¿½nica";
 				break;
 			case 6:
-				echo "Ingeniería Mecatrónica";
+				echo "Ingenierï¿½a Mecatrï¿½nica";
 				break;
 			case 7:
-				echo "Ingeniería en Administración";
+				echo "Ingenierï¿½a en Administraciï¿½n";
 				break;
 			case 8:
-				echo "Ingeniería Mecánica";
+				echo "Ingenierï¿½a Mecï¿½nica";
 				break;
 			default :
 				echo "Carrera no identificada";
 				break;
 		} 
 		echo"</h4>
+                <h4>DATOS DEL GRUPO</h4>
 		<h4>Semestre: $semestre</h4>
 		<h4>Clave de grupo: $claveGrupo</h4>
 		<h4>No. de alumnos tutorados: $contador </h4>
@@ -248,12 +249,12 @@
 			</tr>
 			
 			<tr>
-				<td>Distribución de tiempo (DT)</td>
+				<td>Distribuciï¿½n de tiempo (DT)</td>
 				<td align='center'>".($sumaDT/$respondieron); echo"</td>
 			</tr>
 			
 			<tr>
-				<td>Motivación para el estudio (ME)</td>
+				<td>Motivaciï¿½n para el estudio (ME)</td>
 				<td align='center'>".($sumaME/$respondieron); echo "</td>
 			</tr>
 			
@@ -268,7 +269,7 @@
 			</tr>
 			
 			<tr>
-				<td>Optimización de la lectura (OL)</td>
+				<td>Optimizaciï¿½n de la lectura (OL)</td>
 				<td align='center'>".($sumaOL/$respondieron); echo"</td>
 			</tr>
 			
@@ -289,7 +290,7 @@
 		
 		<h5><canvas id='micanvas' width='650' height='350'></h5>
 		<p>Puntos fuertes identificados en el grupo: $fortalezas</p>
-		<p>Puntos débiles identificados en el grupo: $debilidades</p>
+		<p>Puntos dï¿½biles identificados en el grupo: $debilidades</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<script>
@@ -450,7 +451,7 @@
 	}else{
 		echo "
 			<p>&nbsp;</p>
-			<p class='Error'>¡El cuestionario Habitos de Esturio aun no ha sido contestado!</p>
+			<p class='Error'>ï¿½El cuestionario Habitos de Esturio aun no ha sido contestado!</p>
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
 			";
